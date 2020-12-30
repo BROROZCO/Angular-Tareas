@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "APP-TAREAS"
+  "defaultProject": "APP-TAREAS",
+  "cli": {
+    "analytics": false
+  }
 }
