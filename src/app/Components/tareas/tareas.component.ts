@@ -18,4 +18,17 @@ export class TareasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  agregarTarea() {
+
+    alert(this.nombreTarea);
+    // Crear objeto
+  
+
+    // Agregar objeto al array
+
+    // Resear formulario
+
+  }
+
+
 }
