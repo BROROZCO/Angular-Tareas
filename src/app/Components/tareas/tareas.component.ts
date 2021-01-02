@@ -8,7 +8,7 @@ import { Tareas } from 'src/app/models/Tareas';
 })
 export class TareasComponent implements OnInit {
 
-  listaTareas: Tareas[] = []
+  listaTareas: Tareas[] = [];
 
   // BIDING DATA
   nombreTarea = '';
@@ -20,13 +20,18 @@ export class TareasComponent implements OnInit {
 
   agregarTarea() {
 
-    alert(this.nombreTarea);
     // Crear objeto
-  
+    const tarea_: Tareas ={
+      nombre: this.nombreTarea,
+      estado: false
+    }
 
     // Agregar objeto al array
 
+    this.listaTareas.push(tarea_);
+
     // Resear formulario
+    this.nombreTarea = '';
 
   }
 
