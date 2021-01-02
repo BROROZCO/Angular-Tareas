@@ -32,6 +32,9 @@ export class TareasComponent implements OnInit {
 
     this.listaTareas.push(tarea_);
 
+    // este arreglo es una copia de listaTareas.nombre[n]
+    this.auxilar.push(tarea_.nombre);
+
 
     // Resear formulario
     this.nombreTarea = '';

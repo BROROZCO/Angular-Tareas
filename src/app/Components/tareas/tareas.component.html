@@ -9,9 +9,15 @@
                 <h6>No hay tareas para mostrar</h6>
             </div>
 
-            <ul class="list-group">
-                <li *ngFor="let tarea_x of listaTareas" class="list-group-item">
-                    {{auxilar}}
+            <ul class="list-group ">
+                <li *ngFor="let tarea_x of auxilar; let i = index" class="list-group-item d-flex justify-content-between">
+                    <span class="cursor">
+                        <i class="far fa-circle"></i>
+                    </span>
+                    {{auxilar[i]}}
+                    <span class="cursor text-danger" >
+                        <i class="fas fa-trash-alt"></i> 
+                    </span>
                 </li>
               </ul>
 
