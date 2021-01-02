@@ -12,6 +12,8 @@ export class TareasComponent implements OnInit {
 
   // BIDING DATA
   nombreTarea = '';
+  // 
+  auxilar: string[] = [];
 
   constructor() { }
 
@@ -29,6 +31,7 @@ export class TareasComponent implements OnInit {
     // Agregar objeto al array
 
     this.listaTareas.push(tarea_);
+
 
     // Resear formulario
     this.nombreTarea = '';
