@@ -49,8 +49,8 @@ export class TareasComponent implements OnInit {
   }
 
   // Actualizar Tarea
-  actualizarTarea(tarea_1: Tareas, index: number): void{
-    this.listaTareas[index].estado = !tarea_1.estado;
+  actualizarTarea( index: number): void{
+    this.listaTareas[index].estado = !this.listaTareas[index].estado;
   }
 
 }

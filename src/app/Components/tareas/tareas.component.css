@@ -6,6 +6,10 @@ input{
     font-size: 1.8rem; 
 }
 
+.b-texto{
+    text-align: center;
+}
+
 .cursor{
     cursor: pointer;
 }
