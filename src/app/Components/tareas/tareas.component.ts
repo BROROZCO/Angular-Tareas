@@ -38,8 +38,19 @@ export class TareasComponent implements OnInit {
 
     // Resear formulario
     this.nombreTarea = '';
-
   }
 
+  // Eliminar tarea
+  eliminarTarea(index: number): void
+  {
+    // splice -> desde donde va a eliminar, cantidad de elementos a eliminar
+    this.listaTareas.splice(index,1);
+    this.auxilar.splice(index,1);
+  }
+
+  // Actualizar Tarea
+  actualizarTarea(tarea_1: Tareas, index: number): void{
+    this.listaTareas[index].estado = !tarea_1.estado;
+  }
 
 }
